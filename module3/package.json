@@ -16,7 +16,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "set PORT=4003 && react-scripts start",
+    "start": "set PORT=4003 && react-scripts start --host 0.0.0.0 --disable-host-check  --ip 192.168.0.1",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

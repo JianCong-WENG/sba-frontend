@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import { API_URL } from '../../Constants';
+import { API_URL } from "../../Constants";
 import { LoginContext } from '../../contexts/LoginContext';
 
 function LoginPage(props) {
@@ -43,7 +43,8 @@ function LoginPage(props) {
             password: password
         }
 
-        await axios.post(API_URL + 'ccuser/login', loginDetail)
+    await axios
+      .post(API_URL + "ccuser/login", loginDetail)
             .then(response => {
                 console.log(response);
                 setUserId('');
